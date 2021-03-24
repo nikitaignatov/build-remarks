@@ -1,0 +1,41 @@
+Works on this machine
+Works on my machine 
+It is a mystery that it even compiles
+Maybe you should write a test for this!
+Coding on master? why not!
+Awesome!
+You have done a lot of refactoring!
+It builds, now it is time for a beer!
+Did you update the packages?
+God knows what this code does!
+Where are the tests?
+Pizza time?
+Try to restart visual studio
+Nice, it builds!
+This code could use a bit of... refactoring!
+Maybe you should refactor this code!
+Are you staying late again?
+How many tests have you written today?
+Are you staying late again?
+At least this is not COBOL!
+Let's fix other errors tomorrow
+Let's fix the remaining bugs in the next version
+It builds, project manager will be happy
+It builds, lets ship this to production!
+This code is like spaghetti
+very good, very good!
+very good!
+build error.. oh, no no, is all good
+good job! very good!
+This logic doesn't really belong here
+Dont repeat yourself - abstract and reuse
+Check for nullpointers, project manager will be happy
+How can we improve this code?
+Did you run the npm install?
+Finally, it compiles!
+Try rebuilding the project
+Looks like you need to read the documentation
+Please fix the build error
+Ninty nine compiler errors in the code. One error is fixed, build again. Three hundred fifty three errors in the code.
+A programmer had a problem, He decided to use Java, Now he has a Problem Factory
+Ninty nine bugs in the code. One bug is fixed, build again. Two hundred twenty three bugs in the code.
