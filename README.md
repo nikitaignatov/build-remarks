@@ -5,7 +5,8 @@ Add this to your build pipeline to enjoy some commentary while the magic compile
 
 ## How to use
 
-Post build event
+clone the repo somewhere, then add the script to your build tool. For the msbuild projects you can add them as in the examples. 
+Just adjust the path with the correct directory where you cloned the repo. Don't use this for in production projects :D
 
 
 | Parameter | Default    | Description                                                        |
@@ -17,19 +18,19 @@ Post build event
 ### From powershell
  
 ```
-.\build_remarks.ps1 -Type pre_build -Language pl -Remarks c:\temp\build\remarks\
+.\build_remarks.ps1 -Type pre_build -Language pl -Remarks c:\temp\remarks\
 ```
 
 ### Running as pre post build events
 
 ```xml
-<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-  <Exec Command="powershell -ExecutionPolicy Unrestricted  -c &quot;&amp; { c:\temp\build_remarks.ps1 'pre_build' 'c:\temp\remarks\' 'en' }&quot;" />
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(Configuration)' == 'Debug'">
+  <Exec Command="powershell -ExecutionPolicy Unrestricted  -c &quot;&amp; { c:\temp\build_remarks.ps1 'pre_build' 'c:\temp\remarks\' 'it' }&quot;" />
 </Target>
 ```
 
 ```xml
-<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-  <Exec Command="powershell -ExecutionPolicy Unrestricted  -c &quot;&amp; { c:\temp\build_remarks.ps1 'post_build' 'c:\temp\remarks\' 'en' }&quot;" />
+<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
+  <Exec Command="powershell -ExecutionPolicy Unrestricted  -c &quot;&amp; { c:\temp\build_remarks.ps1 'post_build' 'c:\temp\remarks\' 'pl' }&quot;" />
 </Target>
 ```
